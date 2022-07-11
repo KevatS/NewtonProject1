@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.header {
+  grid-area: header;
+}
+.About-web {
+  grid-area: About-web;
+}
+.Products {
+  grid-area: Products;
+}
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  gap: 0px;
+  grid-template-areas:
+    "header"
+    "About-web"
+    "Products"
+    "footer";
+}
+.header {
+  width: 100%;
+  height: 970px;
+  background-image: url("./bannerimg.jfif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.header .header-left {
+  float: left;
+  padding-top: 50px;
+}
+
+.header .header-left li {
+  font-size: 50px;
+  font-weight: 100;
+  padding-left: 50px;
+  color: blue;
+}
+.header .header-right {
+  float: right;
+  padding-top: 60px;
+}
+.header .header-right li {
+  padding-right: 50px;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.header .header-right a {
+  text-decoration: none;
+}
+
+.header-left li,
+.header-right li {
+  display: inline-block;
+  list-style-type: none;
+}
+.About-web {
+  width: 100%;
+  height: 970px;
+  background-color: white;
+  display: flex;
+}
+.About-web .about-left {
+  width: 40%;
+}
+.About-web .about-left img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.About-web .about-right {
+  width: 60%;
+  padding: 200px;
+}
+.About-web .about-right h2 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+.About-web .about-right p {
+  font-size: 30px;
+}
+
+.Products {
+  width: 100%;
+  height: 970px;
+  display: grid;
+  gap: 0;
+  grid-template-columns: auto auto auto;
+}
+.Products .sub-products {
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
+.Products .sub-products img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.Products .sub-products .label {
+  position: absolute;
+  text-align: center;
+  top: 300px;
+  font-size: 50px;
+  right: 250px;
+  color: white;
+}
+.Products .sub-products .price {
+  position: absolute;
+  top: 350px;
+  font-size: 50px;
+  left: 250px;
+  color: white;
+}
+.footer {
+  padding: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .name {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  height: auto;
+}
+.footer .left-footer .name {
+  width: 400px;
+  height: 30px;
+}
+.footer .left-footer h1 {
+  font-size: 40px;
+  font-style: inherit;
+}
+.footer .left-footer .textarea {
+  width: 400px;
+  height: 80px;
+}
+.footer .right-footer {
+  margin-bottom: 20px;
+  float: right;
+}
+.footer .right-footer h1 {
+  font-size: 40px;
+  font-style: inherit;
+}
+.footer .right-footer p {
+  margin-top: 5%;
+  font-size: 30px;
+  font-style: italic;
+}
+.footer .right-footer a {
+  font-size: 30px;
+  text-decoration: none;
+}
